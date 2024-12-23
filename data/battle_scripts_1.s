@@ -1431,7 +1431,7 @@ BattleScript_EffectTripleKick::
 	attackcanceler
 	attackstring
 	ppreduce
-	sethword sTRIPLE_KICK_POWER, 0
+	sethword sTRIPLE_KICK_POWER, 20
 	initmultihitstring
 	setmultihit 3
 BattleScript_TripleKickLoop::
