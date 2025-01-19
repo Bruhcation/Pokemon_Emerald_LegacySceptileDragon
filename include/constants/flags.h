@@ -687,9 +687,9 @@
 #define FLAG_DEFEATED_ZINNIA            0x288
 #define FLAG_ENCOUNTERED_ROAMING_LATI   0x289
 #define FLAG_BEAT_WALLY_PETALBURG       0x28A
-#define FLAG_UNUSED_0x28B  0x28B // Unused Flag
-#define FLAG_UNUSED_0x28C  0x28C // Unused Flag
-#define FLAG_UNUSED_0x28D  0x28D // Unused Flag
+#define FLAG_FRONTIER_SEEDOT_NPC_TRADE_COMPLETED    0x28B
+#define FLAG_FRONTIER_PLUSLE_NPC_TRADE_COMPLETED    0x28C
+#define FLAG_RECEIVED_SHINY_BELDUM      0x28D
 #define FLAG_UNUSED_0x28E  0x28E // Unused Flag
 #define FLAG_UNUSED_0x28F  0x28F // Unused Flag
 #define FLAG_UNUSED_0x290  0x290 // Unused Flag
@@ -1270,10 +1270,10 @@
 #define FLAG_SCOTT_RECIEVED_CARBOS                                  0x4CA
 #define FLAG_BEAT_ARCHIE_MARINE_CAVE                                0x4CB
 #define FLAG_BEAT_MAXIE_TERRA_CAVE                                  0x4CC
-#define FLAG_UNUSED_0x4CD                                           0x4CD // Unused Flag
-#define FLAG_UNUSED_0x4CE                                           0x4CE // Unused Flag
-#define FLAG_UNUSED_0x4CF                                           0x4CF // Unused Flag
-#define FLAG_UNUSED_0x4D0                                           0x4D0 // Unused Flag
+#define FLAG_HIDE_ROUTE_103_TREE_1                                  0x4CD
+#define FLAG_HIDE_SLATEPORT_CITY_INCENSE_WOMAN                      0x4CE
+#define FLAG_CAUGHT_UNOWN_A                                         0x4CF
+#define FLAG_SHOW_HIDDEN_POWER                                      0x4D0
 #define FLAG_UNUSED_0x4D1                                           0x4D1 // Unused Flag
 #define FLAG_UNUSED_0x4D2                                           0x4D2 // Unused Flag
 #define FLAG_UNUSED_0x4D3                                           0x4D3 // Unused Flag
