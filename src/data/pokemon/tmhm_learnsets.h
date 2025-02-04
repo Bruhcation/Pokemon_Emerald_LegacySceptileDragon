@@ -541,6 +541,7 @@ const union {
         .ATTRACT = TRUE,
         .STRENGTH = TRUE,
         .FLASH = TRUE,
+        .SURF = TRUE,
         .ROCK_SMASH = TRUE,
     } },
 
@@ -568,6 +569,7 @@ const union {
         .THIEF = TRUE,
         .STRENGTH = TRUE,
         .FLASH = TRUE,
+        .SURF = TRUE,
         .ROCK_SMASH = TRUE,
     } },
 
@@ -941,6 +943,7 @@ const union {
         .OVERHEAT = TRUE,
         .SOLAR_BEAM = TRUE,
         .SHADOW_BALL = TRUE,
+        .CALM_MIND = TRUE,
         .FLASH = TRUE,
     } },
 
