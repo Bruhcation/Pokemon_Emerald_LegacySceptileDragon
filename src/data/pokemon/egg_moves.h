@@ -251,7 +251,8 @@ const u16 gEggMoves[] = {
               MOVE_DOUBLE_KICK,
               MOVE_HYPNOSIS,
               MOVE_CHARM,
-              MOVE_DOUBLE_EDGE),
+              MOVE_DOUBLE_EDGE,
+              MOVE_BATON_PASS),
 
     egg_moves(SLOWPOKE,
               MOVE_SAFEGUARD,
@@ -709,7 +710,8 @@ const u16 gEggMoves[] = {
               MOVE_REVERSAL,
               MOVE_LEECH_LIFE,
               MOVE_SIGNAL_BEAM,
-              MOVE_SILVER_WIND),
+              MOVE_SILVER_WIND,
+              MOVE_HYPNOSIS),
 
     egg_moves(WOOPER,
               MOVE_BODY_SLAM,
@@ -735,7 +737,8 @@ const u16 gEggMoves[] = {
               MOVE_SCREECH,
               MOVE_DESTINY_BOND,
               MOVE_PSYCH_UP,
-              MOVE_IMPRISON),
+              MOVE_IMPRISON,
+              MOVE_WILL_O_WISP),
 
     egg_moves(GIRAFARIG,
               MOVE_TAKE_DOWN,

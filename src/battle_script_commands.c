@@ -10014,11 +10014,11 @@ static void Cmd_trysetcaughtmondexflags(void)
         }
         else
         {
-            letter += (SPECIES_UNOWN_B - 1);
-            species = letter;
+            species = letter + (SPECIES_UNOWN_B - 1);
             if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
             {
-                HandleSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_SET_CAUGHT, personality);
+                GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_SET_SEEN);
+                GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_SET_CAUGHT);
             }
         }
         if (CheckCaughtAllUnown())

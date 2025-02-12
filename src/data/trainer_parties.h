@@ -1598,7 +1598,7 @@ static const struct TrainerMon sParty_Valerie5[] = {
     .heldItem = ITEM_LEFTOVERS,
     .ability = ABILITY_SLOT_1,
     .evs = {152, 0, 126, 0, 102, 126},
-    .moves = {MOVE_SHADOW_PUNCH, MOVE_CALM_MIND, MOVE_PAIN_SPLIT, MOVE_THUNDERBOLT}
+    .moves = {MOVE_SHADOW_PUNCH, MOVE_CALM_MIND, MOVE_PAIN_SPLIT, MOVE_THUNDER_PUNCH}
     },
     {
     .ivs = BEST_IV_SPREAD,
@@ -1751,7 +1751,7 @@ static const struct TrainerMon sParty_Cindy5[] = {
     .lvl = 51,
     .species = SPECIES_DELCATTY,
     .heldItem = ITEM_NUGGET,
-    .moves = {MOVE_DOUBLE_EDGE, MOVE_SING, MOVE_FAINT_ATTACK, MOVE_SAND_ATTACK}
+    .moves = {MOVE_DOUBLE_EDGE, MOVE_SING, MOVE_FAINT_ATTACK, MOVE_THUNDER_WAVE}
     }
 };
 
@@ -1761,7 +1761,7 @@ static const struct TrainerMon sParty_Cindy6[] = {
     .lvl = 68,
     .species = SPECIES_DELCATTY,
     .heldItem = ITEM_NUGGET,
-    .moves = {MOVE_DOUBLE_EDGE, MOVE_SING, MOVE_FAINT_ATTACK, MOVE_SAND_ATTACK}
+    .moves = {MOVE_DOUBLE_EDGE, MOVE_SING, MOVE_FAINT_ATTACK, MOVE_THUNDER_WAVE}
     }
 };
 // Mt Chimney Beauty
@@ -6327,7 +6327,7 @@ static const struct TrainerMon sParty_Lao1[] = {
     .iv = 0,
     .lvl = 22,
     .species = SPECIES_GULPIN,
-    .moves = {MOVE_SLUDGE, MOVE_TACKLE, MOVE_ENCORE, MOVE_YAWN}
+    .moves = {MOVE_SLUDGE, MOVE_POUND, MOVE_ENCORE, MOVE_YAWN}
     },
     {
     .iv = 0,
@@ -9966,7 +9966,7 @@ static const struct TrainerMon sParty_Hideo[] = {
     .iv = 0,
     .lvl = 28,
     .species = SPECIES_SWALOT,
-    .moves = {MOVE_ENCORE, MOVE_YAWN, MOVE_SLUDGE, MOVE_TACKLE}
+    .moves = {MOVE_ENCORE, MOVE_YAWN, MOVE_SLUDGE, MOVE_BODY_SLAM}
     }
 };
 // Route 120 Ninja Boy 2
@@ -9975,13 +9975,11 @@ static const struct TrainerMon sParty_Keigo[] = {
     .iv = 0,
     .lvl = 28,
     .species = SPECIES_SWALOT,
-    .moves = {MOVE_POISON_GAS, MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN}
     },
     {
     .iv = 0,
     .lvl = 28,
     .species = SPECIES_NINJASK,
-    .moves = {MOVE_SAND_ATTACK, MOVE_DOUBLE_TEAM, MOVE_FURY_CUTTER, MOVE_SWORDS_DANCE}
     }
 };
 // Route 120 Ninja Boy 1
