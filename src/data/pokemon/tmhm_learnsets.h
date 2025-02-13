@@ -3290,7 +3290,6 @@ const union {
         .CUT = TRUE,
         .STRENGTH = TRUE,
         .ROCK_SMASH = TRUE,
-        .DIG = TRUE,
     } },
 
     [SPECIES_TAUROS] = { .learnset = {
