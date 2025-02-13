@@ -1128,6 +1128,7 @@ const union {
         .ATTRACT = TRUE,
         .CUT = TRUE,
         .FLASH = TRUE,
+        .PSYCHIC = TRUE,
     } },
 
     [SPECIES_PARAS] = { .learnset = {
@@ -3289,6 +3290,7 @@ const union {
         .CUT = TRUE,
         .STRENGTH = TRUE,
         .ROCK_SMASH = TRUE,
+        .DIG = TRUE,
     } },
 
     [SPECIES_TAUROS] = { .learnset = {
@@ -4775,6 +4777,7 @@ const union {
         .ATTRACT = TRUE,
         .CUT = TRUE,
         .FLASH = TRUE,
+        .PSYCHIC = TRUE,
     } },
 
     [SPECIES_MARILL] = { .learnset = {

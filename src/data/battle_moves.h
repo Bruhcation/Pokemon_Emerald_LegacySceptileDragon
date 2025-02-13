@@ -1654,7 +1654,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_WATERFALL] =
     {
         .effect = EFFECT_FLINCH_HIT,
-        .power = 70,
+        .power = 80,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 15,

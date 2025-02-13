@@ -10379,7 +10379,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_TROPIUS] =
     {
         .baseHP        = 120,
-        .baseAttack    = 65,
+        .baseAttack    = 85,
         .baseDefense   = 83,
         .baseSpeed     = 51,
         .baseSpAttack  = 85,
