@@ -415,7 +415,7 @@ MossdeepCity_SceneWithBirch_Text_JirachiAppears::
 	delay 40
 	waitmoncry
 	setvar VAR_LAST_TALKED, LOCALID_JIRACHI
-	seteventmon SPECIES_JIRACHI, 30
+	seteventmon SPECIES_JIRACHI, 50
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	waitstate
