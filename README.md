@@ -93,7 +93,7 @@ These videos also provide an overview of the hack and the ideology behind it:
 
 ### Music Credits:
 - "Vs Zinnia" - GBA MIDI by LibertyTwins, Original Composition by Shota Kageyama
-- "Battle! Rival Wally! (Pokemon Omega Ruby/Alpha Sapphire)" - Based on [a Score written by BreadMaster](https://musescore.com/user/13873941/scores/6601098), Original Composition by Minako Adachi
+- "Battle! Rival Wally! (Pokemon Omega Ruby/Alpha Sapphire)" - [Arrangement written by BreadMaster](https://musescore.com/user/13873941/scores/23255677/s/0sBU8r), Original Composition by Minako Adachi
 
 
 ### Where you can find all Pret Tutorials:
@@ -156,6 +156,7 @@ These videos also provide an overview of the hack and the ideology behind it:
 - Jirachii - [Hidden Power type in summary screen](https://www.pokecommunity.com/threads/simple-modifications-directory.416647/page-11#post-10269132)
 - cromerc - [Fixed unix build issues](https://github.com/cRz-Shadows/Pokemon_Emerald_Legacy/pull/1)
 - ElusiveEllie - [Fixed INSTALL.md instructions to point to correct project](https://github.com/cRz-Shadows/Pokemon_Emerald_Legacy/pull/8)
+- Scyrous - [Make Move Relearner Teach Egg Moves With A Flag](https://github.com/pret/pokeemerald/wiki/Make-Move-Relearner-Teach-Egg-Moves-With-A-Flag)
 
 
 ### Other Credits:

@@ -24,6 +24,7 @@
 #include "task.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "daycare.h"
 
 /*
  * Move relearner state machine
@@ -900,7 +901,10 @@ static void CreateLearnableMovesList(void)
     s32 i;
     u8 nickname[POKEMON_NAME_LENGTH + 1];
 
-    sMoveRelearnerStruct->numMenuChoices = GetMoveRelearnerMoves(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->movesToLearn);
+    if (FlagGet(FLAG_EGG_MOVES_TUTOR))
+        sMoveRelearnerStruct->numMenuChoices = GetEggMoves(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->movesToLearn);
+    else
+        sMoveRelearnerStruct->numMenuChoices = GetMoveRelearnerMoves(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->movesToLearn);
 
     for (i = 0; i < sMoveRelearnerStruct->numMenuChoices; i++)
     {
