@@ -77,7 +77,6 @@ static void DoStandardWildBattle(void);
 static void CB2_EndWildBattle(void);
 static void CB2_EndScriptedWildBattle(void);
 static u8 GetWildBattleTransition(void);
-static u8 GetTrainerBattleTransition(void);
 static void TryUpdateGymLeaderRematchFromWild(void);
 static void TryUpdateGymLeaderRematchFromTrainer(void);
 static void CB2_GiveStarter(void);
@@ -753,19 +752,19 @@ static u16 GetSumOfPlayerPartyLevel(u8 numMons)
 
 static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
 {
-    const struct TrainerMon *party;
     u8 i;
     u8 sum;
     u32 count = numMons;
+    const struct Trainer *opponent = &gTrainers[opponentId];
 
-    party = gTrainers[opponentId].party.TrainerMon;
 
-    if (gTrainers[opponentId].partySize < count)
-        count = gTrainers[opponentId].partySize;
+    if (opponent->partySize < count)
+        count = opponent->partySize;
 
     sum = 0;
+
     for (i = 0; i < count; i++)
-        sum += party[i].lvl;
+        sum += opponent->party[i].lvl;
 
     return sum;
 }
@@ -792,7 +791,7 @@ static u8 GetWildBattleTransition(void)
     }
 }
 
-static u8 GetTrainerBattleTransition(void)
+u8 GetTrainerBattleTransition(void)
 {
     u8 minPartyCount;
     u8 transitionType;
@@ -1085,7 +1084,8 @@ void SetMapVarsToTrainer(void)
 
 const u8 *BattleSetup_ConfigureTrainerBattle(const u8 *data)
 {
-    InitTrainerBattleVariables();
+    if (TrainerBattleLoadArg8(data) != TRAINER_BATTLE_SET_TRAINER_B)
+        InitTrainerBattleVariables();
     sTrainerBattleMode = TrainerBattleLoadArg8(data);
 
     switch (sTrainerBattleMode)
@@ -1142,10 +1142,10 @@ const u8 *BattleSetup_ConfigureTrainerBattle(const u8 *data)
         return EventScript_TryDoNormalTrainerBattle;
     case TRAINER_BATTLE_SET_TRAINER_A:
         TrainerBattleLoadArgs(sOrdinaryBattleParams, data);
-        return NULL;
+        return sTrainerBattleEndScript;
     case TRAINER_BATTLE_SET_TRAINER_B:
         TrainerBattleLoadArgs(sTrainerBOrdinaryBattleParams, data);
-        return NULL;
+        return sTrainerBattleEndScript;
     case TRAINER_BATTLE_HILL:
         if (gApproachingTrainerId == 0)
         {
@@ -1873,7 +1873,7 @@ u16 CountBattledRematchTeams(u16 trainerId)
 u8 getLevelCap(void){
     u8 levelCap = 0;
     u16 nextLeader, i;
-    const struct TrainerMon *partyData;
+    const struct TrainerMon *partyData;    
     if (!FlagGet(FLAG_HARD) || FlagGet(FLAG_IS_CHAMPION))
         return 100;
     if (!FlagGet(FLAG_BADGE01_GET))
@@ -1900,7 +1900,7 @@ u8 getLevelCap(void){
     else if (!FlagGet(FLAG_IS_CHAMPION))
         nextLeader = TRAINER_STEVEN_1;
 
-    partyData = gTrainers[nextLeader].party.TrainerMon;
+    partyData = gTrainers[nextLeader].party;
     for (i = 0; i < gTrainers[nextLeader].partySize; i++){
         if (partyData[i].lvl > levelCap)
             levelCap = partyData[i].lvl;

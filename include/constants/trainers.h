@@ -3,6 +3,7 @@
 
 #include "constants/opponents.h"
 #include "constants/battle_frontier_trainers.h"
+#include "constants/partners.h"
 
 // Special Trainer Ids.
 //      0-299 are frontier trainers
@@ -14,7 +15,7 @@
 #define TRAINER_SECRET_BASE                 1024
 #define TRAINER_LINK_OPPONENT               2048
 #define TRAINER_UNION_ROOM                  3072
-#define TRAINER_STEVEN_PARTNER              3075
+#define TRAINER_PARTNER(partner)           (3075 + partner)
 
 #define TRAINER_PIC_HIKER                  0
 #define TRAINER_PIC_AQUA_GRUNT_M           1
@@ -377,11 +378,6 @@
 
 // Set to buff up all trained pokemon that use .iv instead of .ivs
 #define TRAINER_IV_MODIFIER       0
-
-// Unused.
-#define F_TRAINER_PARTY_CUSTOM_MOVESET (1 << 0)
-#define F_TRAINER_PARTY_HELD_ITEM      (1 << 1)
-#define F_TRAINER_PARTY_CUSTOM_MON     (1 << 2)
 
 // Use for trainer parties.
 #define TRAINER_MON_FEMALE     1
