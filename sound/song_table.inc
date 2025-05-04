@@ -560,7 +560,7 @@ gSongTable::
 	song mus_rg_trainer_tower, 0, 0
 	song mus_rg_slow_pallet, 0, 0
 	song mus_rg_teachy_tv_menu, 0, 0
-	song mus_zinnia, 0, 0
+	song mus_vs_zinnia, 0, 0
 	song mus_wally, 0, 0
 	song ph_trap_blend, 2, 2
 	song ph_trap_held, 2, 2

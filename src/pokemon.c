@@ -6469,7 +6469,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_MAGMA_ADMIN:
             return MUS_VS_AQUA_MAGMA;
         case TRAINER_CLASS_LOREKEEPER:
-            return MUS_ZINNIA;
+            return MUS_VS_ZINNIA;
         case TRAINER_CLASS_WALLY:
             return MUS_WALLY;
         case TRAINER_CLASS_LEADER:
